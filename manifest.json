@@ -1,0 +1,11 @@
+{
+    "name":"Link Storage",
+    "description":"It store all the links entered by by for your future purpose",
+    "version":"1.0",
+    "manifest_version":3,
+    "permissions": ["storage","tabs"],
+
+    "action": {
+        "default_popup": "index.html"
+    }
+}

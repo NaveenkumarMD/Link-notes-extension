@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <script src="./index.js" defer></script>
+    <meta http-equiv="Content-Security-Policy"
+        content="script-src 'self' 'sha256-WOdSzz11/3cpqOdrm89LBL2UPwEU9EhbDtMy2OciEhs='">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="cover" id="nav-open">
+                <img src="./Assets/menu.png" width="14px" id="menu" />
+            </div>
+            <div class="title" id="title">My Links</div>
+            <div class="cover" id="search-nav">
+                <img src="./Assets/search.svg" width="14px" />
+            </div>
+        </div>
+        <div class="sidenav" id="mySidenav">
+            <a class="closebtn" id="nav-close">&times;</a>
+            <div class="nav-options" id="about">
+                <img src="./Assets/person.png" width="23px" />
+                <a href="#">About me</a>
+            </div>
+            <div class="nav-options" id="github">
+                <img src="./Assets/github.png" width="23px" />
+                <a href="#">Github</a>
+            </div>
+            <div class="nav-options" id="deleted-nav">
+                <img src="./Assets/deleted.png" width="23px" />
+                <a href="#">Deleted</a>
+            </div>
+            <div class="nav-options" id="favourites-nav">
+                <img src="./Assets/favourites.png" width="23px" />
+                <a href="#">Favourites</a>
+            </div>
+        </div>
+        <div class="search-container" id="search-container">
+            <div class="search-box">
+                <input type="text" placeholder="Search.." name="search" id="search-input">
+                <img src="./Assets/search.svg" width="16px" id="search-submit" />
+            </div>
+        </div>
+        <div class="content" id="content">
+        </div>
+        <div class="add" id="addbutton">
+            <img src="./Assets/add.png" width="20px">
+        </div>
+        <div class="footer" id="footer">
+            <div class="input-container">
+                <img src="/Assets/title.png" />
+                <input type="text" placeholder="Enter the title" spellcheck="false" id="tag-input" />
+            </div>
+            <div class="input-container">
+                <img src="/Assets/link.png" />
+                <input type="text" placeholder="Paste the link" spellcheck="false" id="link-input" />
+            </div>
+
+            <div class="btn-container">
+                <button class="submit-button" id="new-submit">Add</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
