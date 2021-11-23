@@ -197,7 +197,13 @@ function load(data) {
 
         delete_.onclick = () => {
             if (document.getElementById('title').innerText == "Deleted") {
-                return
+                chrome.storage.sync.get(['deleted'],result => {
+                    let newdata=result.deleted.filter(e => e.link != element.link)
+                    chrome.storage.sync.set({deleted:newdata},()=>{
+                        console.log("Updated")
+                        load(newdata)
+                    })
+                })
             }
             else{
                 chrome.storage.sync.get(['data', 'deleted'], result => {

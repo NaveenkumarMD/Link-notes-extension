@@ -1,8 +1,13 @@
 {
     "name":"Link Storage",
-    "description":"It store all the links entered by by for your future purpose",
-    "version":"1.0",
+    "description":"It store all the links entered by by for your future purpose.",
+    "version":"0.0.0.1",
     "manifest_version":3,
+    "icons":{
+        "16":"Assets/icon16.png",
+        "48":"Assets/icon48.png",
+        "128":"Assets/icon128.png"
+    },
     "permissions": ["storage","tabs"],
 
     "action": {
